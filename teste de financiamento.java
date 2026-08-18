@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class FinancingCalculator {
 
     public static void main(String[] args) {
-        // Configura a moeda para o padrão brasileiro (R$)
         Locale ptBr = new Locale("pt", "BR");
         NumberFormat currencyFormat = NumberFormat.getCurrencyInstance(ptBr);
         Scanner scanner = new Scanner(System.in);
@@ -15,7 +14,6 @@ public class FinancingCalculator {
         System.out.println("   SIMULADOR DE FINANCIAMENTO (PRICE)   ");
         System.out.println("=========================================");
 
-        // Entrada de dados
         System.out.print("Digite o valor do bem (R$): ");
         double assetValue = scanner.nextDouble();
 
